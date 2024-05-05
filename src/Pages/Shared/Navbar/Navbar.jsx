@@ -4,9 +4,9 @@ import logo from '../../../assets/logo.svg'
 const Navbar = () => {
 
     const navItems = <>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/login">Login</Link></li>
+        <li className="font-semibold text-xl"><Link to="/">Home</Link></li>
+        <li className="font-semibold text-xl"><Link to="/about">About</Link></li>
+        <li className="font-semibold text-xl"><Link to="/login">Login</Link></li>
     </>
     return (
         <div className="navbar bg-base-100 h-28 mb-4">
@@ -24,7 +24,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to="/" className="btn btn-ghost text-xl">
-                    <img src={logo} alt="" />
+                    <img className="w-4/5" src={logo} alt="" />
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
